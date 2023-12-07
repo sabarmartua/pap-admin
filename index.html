@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="au theme template">
+    <meta name="author" content="Hau Nguyen">
+    <meta name="keywords" content="au theme template">
+
+    <!-- Title Page-->
+    <title>Dashboard</title>
+
+    <!-- Fontfaces CSS-->
+    <link href="css/font-face.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-5/css/fontawesome-all.min.css" rel="stylesheet" media="all">
+    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+
+    <!-- Bootstrap CSS-->
+    <link href="vendor/bootstrap-4.1/bootstrap.min.css" rel="stylesheet" media="all">
+
+    <!-- Vendor CSS-->
+    <link href="vendor/animsition/animsition.min.css" rel="stylesheet" media="all">
+    <link href="vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet" media="all">
+    <link href="vendor/wow/animate.css" rel="stylesheet" media="all">
+    <link href="vendor/css-hamburgers/hamburgers.min.css" rel="stylesheet" media="all">
+    <link href="vendor/slick/slick.css" rel="stylesheet" media="all">
+    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="vendor/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" media="all">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Main CSS-->
+    <link href="css/theme.css" rel="stylesheet" media="all">
+
+</head>
+
+<body class="animsition">
+    <div class="page-wrapper">
+        <!-- HEADER MOBILE-->
+        <header class="header-mobile d-block d-lg-none">
+            <div class="header-mobile__bar">
+                <div class="container-fluid">
+                    <div class="header-mobile-inner" style="display: flex; align-items: center;">
+                        <a class="logo" href="index.html" style="max-width: 50px; margin-right: 10px;">
+                            <img src="images/logodel.jpeg" alt="CoolAdmin" />
+                        </a>
+                        <div class="logo-text" style="display: flex; flex-direction: column; justify-content: center;">
+                            <h3 style="margin: 0; font-size: 16px;">Institut Teknologi Del</h3>
+                            <h4 style="margin: 0; font-size: 14px;">Martuhan, Marroha, Marbisuk</h4>
+                        </div>
+                        <button class="hamburger hamburger--slider" type="button">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <nav class="navbar-mobile">
+                <div class="container-fluid">
+                    <ul class="navbar-mobile__list list-unstyled">
+                        <li class="has-sub">
+                            <a class="js-arrow" href="#">
+                                <i class="fas fa-tachometer-alt"></i>Dashboard</a>
+                        </li>
+                        <li>
+                            <a href="fasilitas.html">
+                                <i class="fas fa-building"></i>Fasilitas</a>
+                        </li>
+                        <li>
+                            <a href="pengumuman.html">
+                                <i class="fas fa-bullhorn"></i>Pengumuman</a>
+                        </li>
+                        <li>
+                            <a href="programStudi.html">
+                                <i class="fas fa-graduation-cap"></i>Program Pendidikan</a>
+                        </li>
+                        <li>
+                            <a href="lembaga.html">
+                                <i class="fas fa-university"></i>Lembaga</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!-- END HEADER MOBILE-->
+
+        <!-- MENU SIDEBAR-->
+        <aside class="menu-sidebar d-none d-lg-block">
+            <div class="logo" style="display: flex; align-items: center; padding: 20px;">
+                <a href="#" style="max-width: 50px; margin-right: 10px;">
+                    <img src="images/logodel.jpeg" alt="Cool Admin" />
+                </a>
+                <div class="logo-text" style="display: flex; flex-direction: column; justify-content: center;">
+                    <h3 style="margin: 0; font-size: 16px;">Institut Teknologi Del</h3>
+                    <h4 style="margin: 0; font-size: 14px;">MarTuhan, Marroha, Marbisuk</h4>
+                </div>
+            </div>
+            <div class="menu-sidebar__content js-scrollbar1">
+                <nav class="navbar-sidebar">
+                    <ul class="list-unstyled navbar__list">
+                        <li class="active has-sub">
+                            <a class="js-arrow" href="index.html">
+                                <i class="fas fa-tachometer-alt"></i>Dashboard</a>
+                        </li>
+                        <li>
+                            <a href="fasilitas.html">
+                                <i class="fas fa-building"></i>Fasilitas</a>
+                        </li>
+                        <li>
+                            <a href="pengumuman.html">
+                                <i class="fas fa-bullhorn"></i>Pengumuman</a>
+                        </li>
+                        <li>
+                            <a href="programStudi.html">
+                                <i class="fas fa-graduation-cap"></i>Program Pendidikan</a>
+                        </li>
+                        <li>
+                            <a href="lembaga.html">
+                                <i class="fas fa-university"></i>Lembaga</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+        <!-- END MENU SIDEBAR-->
+
+        <!-- PAGE CONTAINER-->
+        <div class="page-container">
+            <!-- HEADER DESKTOP-->
+            <header class="header-desktop">
+                <div class="section__content section__content--p30">
+                    <div class="container-fluid">
+                        <div class="header-wrap">
+                            <form class="form-header" action="" method="POST">
+                                <input class="au-input au-input--xl" type="text" name="search"
+                                    placeholder="Search...." />
+                                <button class="au-btn--submit" type="submit" style="background-color: #048ABF;">
+                                    <i class="zmdi zmdi-search"></i>
+                                </button>
+                            </form>
+                            <div class="header-button">
+                                <div class="noti-wrap">
+                                    <div class="noti__item js-item-menu">
+                                        <i class="fab fa-youtube" style="color: red;"></i>
+                                    </div>
+                                    <div class="noti__item js-item-menu">
+                                        <i class="fab fa-facebook" style="color: blue;"></i>
+                                    </div>
+                                    <div class="noti__item js-item-menu">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                </div>
+
+                                <div class="account-wrap">
+                                    <div class="account-item clearfix js-item-menu">
+                                        <div class="image">
+                                            <img src="images/logodel.jpeg" alt="Admin Del" />
+                                        </div>
+                                        <div class="content">
+                                            <a class="js-acc-btn" href="#">Admin IT Del</a>
+                                        </div>
+                                        <div class="account-dropdown js-dropdown">
+                                            <div class="info clearfix">
+                                                <div class="image">
+                                                    <a href="#">
+                                                        <img src="images/icon/avatar-01.jpg" alt="John Doe" />
+                                                    </a>
+                                                </div>
+                                                <div class="content">
+                                                    <h5 class="name">
+                                                        <a href="#">Admin IT Del</a>
+                                                    </h5>
+                                                    <span class="email">admindel@ac.id</span>
+                                                </div>
+                                            </div>
+                                            <div class="account-dropdown__body">
+                                                <div class="account-dropdown__item">
+                                                    <a href="#">
+                                                        <i class="zmdi zmdi-account"></i>Account</a>
+                                                </div>
+                                            </div>
+                                            <div class="account-dropdown__footer">
+                                                <a href="#">
+                                                    <i class="zmdi zmdi-power"></i>Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- HEADER DESKTOP-->
+
+            <!-- MAIN CONTENT-->
+            <div class="main-content">
+                <div class="section__content section__content--p30">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="overview-wrap">
+                                    <h2 class="title-1">Data Overview</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row m-t-25 justify-content-around">
+                            <div class="col-sm-6 col-lg-3">
+                                <div class="overview-item overview-item" style="background-color: #048ABF;">
+                                    <div class="overview__inner">
+                                        <div class="overview-box clearfix">
+                                            <div class="icon">
+                                                <i class="fas fa-building"></i>
+                                            </div>
+                                            <div class="text">
+                                                <h2>Fasilitas</h2>
+                                                <h3 class="text-white">10</h3>
+                                            </div>
+
+                                        </div>
+                                        <div class="overview-chart">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-3">
+                                <div class="overview-item overview-item" style="background-color: #048ABF;">
+                                    <div class="overview__inner">
+                                        <div class="overview-box clearfix">
+                                            <div class="icon">
+                                                <i class="fas fa-university"></i>
+                                            </div>
+                                            <div class="text">
+                                                <h2>Lembaga</h2>
+                                                <h3 class="text-white">10</h3>
+                                            </div>
+                                        </div>
+                                        <div class="overview-chart">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-3">
+                                <div class="overview-item overview-item" style="background-color: #048ABF;">
+                                    <div class="overview__inner">
+                                        <div class="overview-box clearfix">
+                                            <div class="icon">
+                                                <i class="fas fa-calendar-alt"></i>
+                                            </div>
+                                            <div class="text">
+                                                <h2>Kalender</h2>
+                                                <h3 class="text-white">28 - November - 2023 </h3>
+                                                <p class="text-white">10:18:26 A.M</p>
+                                            </div>
+                                        </div>
+                                        <div class="overview-chart">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-9">
+                                <h2 class="title-1 m-b-25">List Pengumuman</h2>
+                                <div class="table-responsive table--no-card m-b-40">
+                                    <table class="table table-borderless table-striped table-earning">
+                                        <thead>
+                                            <tr>
+                                                <th>Tanggal</th>
+                                                <th>Judul</th>
+                                                <th>Deskripsi</th>
+                                                <th class="text-right">Lembaga Terkait</th>
+                                                <th class="text-right">Gambar</th>
+                                                <th class="text-right">Link</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>2018-09-29</td>
+                                                <td>Wisuda</td>
+                                                <td>Wisuda angkatan ...</td>
+                                                <td class="text-right">Kemahasiswaan</td>
+                                                <td class="text-right"><img src="images/pengumuman1.jpg" alt=""
+                                                        style="width: 50px; height: 50px;"></td>
+                                                <td class="text-right">https://wisdel..</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2018-09-29</td>
+                                                <td>Wisuda</td>
+                                                <td>Wisuda angkatan ...</td>
+                                                <td class="text-right">Kemahasiswaan</td>
+                                                <td class="text-right"><img src="images/pengumuman1.jpg" alt=""
+                                                        style="width: 50px; height: 50px;"></td>
+                                                <td class="text-right">https://wisdel..</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2018-09-29</td>
+                                                <td>Wisuda</td>
+                                                <td>Wisuda angkatan ...</td>
+                                                <td class="text-right">Kemahasiswaan</td>
+                                                <td class="text-right"><img src="images/pengumuman1.jpg" alt=""
+                                                        style="width: 50px; height: 50px;"></td>
+                                                <td class="text-right">https://wisdel..</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2018-09-29</td>
+                                                <td>Wisuda</td>
+                                                <td>Wisuda angkatan ...</td>
+                                                <td class="text-right">Kemahasiswaan</td>
+                                                <td class="text-right"><img src="images/pengumuman1.jpg" alt=""
+                                                        style="width: 50px; height: 50px;"></td>
+                                                <td class="text-right">https://wisdel..</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2018-09-29</td>
+                                                <td>Wisuda</td>
+                                                <td>Wisuda angkatan ...</td>
+                                                <td class="text-right">Kemahasiswaan</td>
+                                                <td class="text-right"><img src="images/pengumuman1.jpg" alt=""
+                                                        style="width: 50px; height: 50px;"></td>
+                                                <td class="text-right">https://wisdel..</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2018-09-29</td>
+                                                <td>Wisuda</td>
+                                                <td>Wisuda angkatan ...</td>
+                                                <td class="text-right">Kemahasiswaan</td>
+                                                <td class="text-right"><img src="images/pengumuman1.jpg" alt=""
+                                                        style="width: 50px; height: 50px;"></td>
+                                                <td class="text-right">https://wisdel..</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <h2 class="title-1 m-b-25">Program Pendidikan</h2>
+                                <div class="au-card au-card au-card-top-countries m-b-40"
+                                    style="background-color: #048ABF;">
+                                    <div class="au-card-inner">
+                                        <div class="table-responsive">
+                                            <table class="table table-top-countries">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>DIII Teknologi Informasi</td>
+                                                        <td class="text-right">Vokasi</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>DIII Teknologi Komputer</td>
+                                                        <td class="text-right">Vokasi</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>ST TRPL</td>
+                                                        <td class="text-right">Vokasi</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>S1 Informatika</td>
+                                                        <td class="text-right">FITE</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>S1 Sistem Informasi</td>
+                                                        <td class="text-right">FITE</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>S1 Teknik Elektro</td>
+                                                        <td class="text-right">FITE</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>S1 Manajemen Rekayasa</td>
+                                                        <td class="text-right">FTI</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>S1 Teknik Metalurgi</td>
+                                                        <td class="text-right">FTI</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>S1 Teknik Bioproses</td>
+                                                        <td class="text-right">FTB</td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Footer -->
+                        <div class=" bg-dark text-white p-5">
+                            <footer>
+                                <div class="row ">
+                                    <div class="col-6 col-md-2 mb-3">
+                                        <h4 class="text-white">Kontak Kami</h4>
+                                        <ul class="nav flex-column">
+                                            <li class="nav-item mb-2"><a href="#"
+                                                    class="nav-link p-0 text-white ">Institut Teknologi DelJl.
+                                                    Sisingamangaraja, SitoluamaLaguboti, Toba SamosirSumatera Utara,
+                                                    IndonesiaKode </a></li>
+                                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white ">Pos:
+                                                    22381</a></li>
+                                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white ">Telp:
+                                                    +62 632 331234</a>
+                                            </li>
+                                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white ">Fax:
+                                                    +62 632 331116</a>
+                                            </li>
+                                            <li class="nav-item mb-2"><a href="#"
+                                                    class="nav-link p-0 text-white ">Website:
+                                                    http://www.del.ac.id</a></li>
+                                            <li class="nav-item mb-2"><a href="#"
+                                                    class="nav-link p-0 text-white ">Email: info@del.ac.id</a>
+                                            </li>
+                                            <li class="nav-item mb-2"><a href="#"
+                                                    class="nav-link p-0 text-white ">Karir:
+                                                    karir@del.ac.id</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="col-6 col-md-2 mb-3">
+                                        <h4>Get Connected On Social Media</h4>
+                                        <ul class="nav flex-column">
+                                            <li class="nav-item mb-2 pt-2"><a href="#"
+                                                    class="nav-link p-0 text-white "><iconify-icon
+                                                        icon="skill-icons:instagram" width="40px"></iconify-icon></a>
+                                            </li>
+                                            <li class="nav-item mb-2 pt-2 "><a href="#"
+                                                    class="nav-link p-0 text-white "><iconify-icon
+                                                        icon="devicon:twitter" width="33px"
+                                                        class="bg-light p-1 rounded"></iconify-icon></a>
+                                            </li>
+                                            <li class="nav-item mb-2 pt-2"><a href="#"
+                                                    class="nav-link p-0 text-white "><iconify-icon icon="logos:facebook"
+                                                        width="40px"></iconify-icon></a></li>
+                                            <li class="nav-item mb-2 pt-2"><a href="#"
+                                                    class="nav-link p-0 text-white "><iconify-icon
+                                                        icon="bi:threads-fill" width="40px"></iconify-icon></a></li>
+                                        </ul>
+                                    </div>
+
+
+
+
+                                    <div
+                                        class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                                        <p>&copy; 2022 Company, Inc. All rights reserved.</p>
+                                        <ul class="list-unstyled d-flex">
+                                            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24"
+                                                        height="24">
+                                                        <use xlink:href="#twitter" />
+                                                    </svg></a></li>
+                                            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24"
+                                                        height="24">
+                                                        <use xlink:href="#instagram" />
+                                                    </svg></a></li>
+                                            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24"
+                                                        height="24">
+                                                        <use xlink:href="#facebook" />
+                                                    </svg></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </footer>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END MAIN CONTENT-->
+            <!-- END PAGE CONTAINER-->
+        </div>
+
+    </div>
+
+    <!-- Jquery JS-->
+    <script src="vendor/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap JS-->
+    <script src="vendor/bootstrap-4.1/popper.min.js"></script>
+    <script src="vendor/bootstrap-4.1/bootstrap.min.js"></script>
+    <!-- Vendor JS       -->
+    <script src="vendor/slick/slick.min.js">
+    </script>
+    <script src="vendor/wow/wow.min.js"></script>
+    <script src="vendor/animsition/animsition.min.js"></script>
+    <script src="vendor/bootstrap-progressbar/bootstrap-progressbar.min.js">
+    </script>
+    <script src="vendor/counter-up/jquery.waypoints.min.js"></script>
+    <script src="vendor/counter-up/jquery.counterup.min.js">
+    </script>
+    <script src="vendor/circle-progress/circle-progress.min.js"></script>
+    <script src="vendor/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="vendor/chartjs/Chart.bundle.min.js"></script>
+    <script src="vendor/select2/select2.min.js">
+    </script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+    <!-- Main JS-->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
+<!-- end document-->
